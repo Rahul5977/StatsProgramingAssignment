@@ -11,7 +11,6 @@ import matplotlib.pyplot as plt
 meanArray=[]
 varArray=[]
 def function(n):
-
     # creating array of size n(uniform distribution)
     arr=np.random.rand(n) 
     # print(arr)
