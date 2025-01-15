@@ -6,7 +6,7 @@
 # English as events of interest, determine the entropy. In other words, determine the
 # uncertainty of alphabets in the English language using fileB.
 
-from partA import readFile,preProcessing,calculateProb,math
+from part1A import readFile,preProcessing,calculateProb,math
 # import math
 
 def entropyCalculation(probabilities):

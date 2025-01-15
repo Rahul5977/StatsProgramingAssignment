@@ -6,14 +6,14 @@ def readFile(filePath):
         return file.read()
     
 def preProcessing(text):
-    # Keep only alphabetic characters, convert to lowercase and remove the spaces ..
+    # Keep only alphabetic characters, convert to lowercase and remove the spaces and special characters...
     return ''.join(char.lower() for char in text if char.isalpha())
 
 def calculateProb(events):
     total_events = len(events)
     frequency = Counter(events)
-    print(f"Frequencies of all the alphabets {frequency}")
-    probabilities = {event: round(count / total_events , 3) for event, count in frequency.items()}
+    # print(f"Frequencies of all the alphabets {frequency}")
+    probabilities = {event: round(count / total_events , 10) for event, count in frequency.items()}
     return sorted(probabilities.items(),key =lambda x: x[1],reverse=True)
 
 def top10Events(probabilities,n=10):
