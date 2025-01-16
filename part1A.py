@@ -33,9 +33,6 @@ def analysisFileA(filePath):
 
 
 filePathA='./fileA.txt'
-# filePathB='./fileB.txt'
-# filePathC='./fileC.txt'
-# filePathD='./fileD.txt'
 
 # (a) Determine the probability of each alphabet in the English language. Upper-case
 # and lower-case alphabets are considered the same. List the top ten alphabets that

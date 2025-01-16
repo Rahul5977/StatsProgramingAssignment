@@ -17,7 +17,7 @@ def analyseFileB(filePath):
     text = readFile(filePath)
     letters = preProcessing(text)
     probabilities = calculateProb(letters)
-    print(f"Probabilities :{probabilities}")
+    # print(f"Probabilities :{probabilities}")
     entropy = entropyCalculation(probabilities)
     print(f"Entropy of Letters in fileB: {entropy}")
     return entropy
